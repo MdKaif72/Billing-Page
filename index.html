@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Billing Counter</h1>
+    <form onsubmit="return getDisplay()" id="mainForm">
+        <table id="customerDetails">
+            <tr>
+                <td><label for="name">Customer Name</label></td>
+                <td><input type="text" name="name" id="name" placeholder="Enter your name" required></td>
+            </tr>
+            <tr>
+                <td><label for="phn">Phone Number</label></td>
+                <td>
+                    <input type="tel" name="phn" id="phone_number" placeholder="Enter your phone number">
+                </td>
+            </tr>
+            
+        </table> <hr>
+
+        <table id="item">
+            <tr>
+                <td><label for="flour">Flour</label></td>
+                <td><input type="number" name="flour" id="flour" min="0" step="1">in Kg</td>
+            </tr>
+            <tr>
+                <td><label for="pulses">Pulses</label></td>
+                <td><input type="number" name="pulses" id="pulses" min="0" step="0.5">in Kg</td>
+            </tr>
+            <tr>
+                <td><label for="maida">Maida</label></td>
+                <td><input type="number" name="maida" id="maida" min="0" step="1">in Kg</td>
+            </tr>
+
+            <tr>
+                <td><label for="mOil">Musturd Oil</label></td>
+                <td><input type="number" name="mOil" id="mOil" min="0" step="0.5">in liter</td>
+            </tr>
+            <tr>
+                <td><label for="rOil">Refined Oil</label></td>
+                <td><input type="number" name="rOil" id="rOil" min="0" step="0.5">in liter</td>
+            </tr>
+            <tr>
+                <td><label for="turmeric">Turmeric Powder</label></td>
+                <td><input type="number" name="turmeric" id="turmeric" min="0" step="100">in g</td>
+            </tr>
+            <tr>
+                <td><label for="cumin">Cumin Powder</label></td>
+                <td><input type="number" name="cumin" id="cumin" min="0" step="100">in g</td>
+            </tr>
+            <tr>
+                <td><label for="coriander">Coriander Powder</label></td>
+                <td><input type="number" name="coriander" id="coriander" min="0" step="100">in g</td>
+            </tr>
+            <tr>
+                <td><label for="peper">Black peper Powder</label></td>
+                <td><input type="number" name="peper" id="peper" min="0" step="100">in g</td>
+            </tr>
+            <tr>
+                <td><label for="sugar">Sugar</label></td>
+                <td><input type="number" name="sugar" id="sugar" min="0" step=".5">in Kg</td>
+            </tr>
+            <tr>
+                <td><label for="tea">Tea</label></td>
+                <td><input type="number" name="tea" id="tea" min="0" step="100">in g</td>
+            </tr>
+        </table>
+        <input type="submit" id="submit" value="Submit"/>
+        <div id="result"></div>
+    </form>
+    
+</body>
+</html>
